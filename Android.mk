@@ -1,3 +1,3 @@
-ifeq ($(call my-dir),$(call project-path-for,qcom-dataservices))
+ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
 include $(call all-subdir-makefiles)
 endif
